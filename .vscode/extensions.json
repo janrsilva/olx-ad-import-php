@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "wongjn.php-sniffer",
+        "shevaua.phpcs",
+        "bmewburn.vscode-intelephense-client"
+    ]
+}
