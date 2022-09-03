@@ -1,0 +1,28 @@
+{
+    "name": "janrsilva/olx-ad-import",
+    "type": "library",
+    "description": "OLX ad import library to send ads to OLX",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "php": "^7.3.0"
+    },
+    "authors": [
+        {
+            "name": "Janderson Silva",
+            "homepage": "https://www.linkedin.com/in/janrsilva/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/janrsilva/olx-ad-import-php/issues",
+        "source": "https://github.com/janrsilva/olx-ad-import-php"
+    },
+    "autoload": {
+        "psr-4": {
+            "Janrsilva\\OlxAdImport\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
