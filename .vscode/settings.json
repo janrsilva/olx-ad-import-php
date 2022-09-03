@@ -1,0 +1,17 @@
+{
+    // for all files
+    "editor.formatOnSave": false,
+    "php.validate.run": "onSave",
+    "[php]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "wongjn.php-sniffer"
+    },
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "phpcs.enable": true,
+    "phpcs.lintOnSave": true,
+    "php.executablePath": "/usr/bin/php",
+    "phpcs.executablePath": "./vendor/bin/phpcs",
+    "phpcs.standard": null,
+}
