@@ -99,9 +99,11 @@ class OlxApi
             ]
         );
 
-        $results = $response->getBody()->getContents();
+        $result = json_decode(
+            $response->getBody()->getContents()
+        );
 
-        return $results;
+        return $result;
     }
 
     public function getCubiccmsInfo()
@@ -135,7 +137,7 @@ class OlxApi
      * @param  array $ads AdCollection
      * @return bool
      */
-    public function publishAd(AdCollection $ads)
+    public function publishAd(AdCollection $ads): string
     {
         $request_data = [
             'access_token' => $this->access_token,
@@ -157,12 +159,10 @@ class OlxApi
             $response->getBody()->getContents(),
         );
 
-        print_r($result);
-
         if ($response->getStatusCode() < 0) {
             throw new \Exception($result->statusMessage, $result->statusCode);
         }
 
-        return $result;
+        return $result->token;
     }
 }
